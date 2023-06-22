@@ -1,10 +1,35 @@
 # ImageProcessing
 
-In this project, I captured an image using the raspberry pi camera, applied some image processing techniques, and calculated the refraction index based on the detected coordinates.
+In this project, I captured an image using the raspberry pi camera with python, applied some image processing techniques, and calculated the refraction index based on the detected coordinates.
+
+I provided codes here in this repository.
+
+It's still a good practice to perform additional testing and validation to ensure the code's reliability across a wider range of scenarios or input variations.
+
+
+<img width="430" alt="Screenshot 2023-06-22 at 3 17 35 PM" src="https://github.com/developerRD/ImageProcessing/assets/34951241/dd2a00a4-fa09-4c50-909b-f5df5168363e">
 
 When the codes run, first a camera starts running and you can see some spots on the camera that shows you how to take the picture in order to get the correct results.
 In order to work with this code and measure the refractive index for liquids, you need a laser pointer and liquid in a glass cup that can be shown in the pictures.
 
-It's still a good practice to perform additional testing and validation to ensure the code's reliability across a wider range of scenarios or input variations.
+<img width="481" alt="Screenshot 2023-06-22 at 3 18 41 PM" src="https://github.com/developerRD/ImageProcessing/assets/34951241/e72de86a-a7cc-4c53-95d8-10934be75bb0">
+
+Gray scale of the picture for calculations
+
+<img width="541" alt="Screenshot 2023-06-22 at 3 19 18 PM" src="https://github.com/developerRD/ImageProcessing/assets/34951241/6254a3f7-85d9-4169-a90a-c63fa14cb364"> 
+
+Black and white, that way we can only work on these points for our calculations
+
+<img width="433" alt="Screenshot 2023-06-22 at 3 20 32 PM" src="https://github.com/developerRD/ImageProcessing/assets/34951241/f648ea24-05ec-4dd2-b953-9fb316e22e42">
+
+And this is the final picture that shows the reuslts. 
+Since my first language is Turkish, I completed this project using Turkish language but here I Provided a translation for you.
+
+Location of laser light : [30 ,504 ] 
+Location of the laser pointed on surface : [207,301]
+Position in the liquid after the light is refracted: [407, 305]
+Refraction: 1.284646
+
+
 
 
