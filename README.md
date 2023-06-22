@@ -26,10 +26,14 @@ And this is the final picture that shows the reuslts.
 Since my first language is Turkish, I completed this project using Turkish language but here I Provided a translation for you.
 
 Location of laser light : [30 ,504 ] 
+
 Location of the laser pointed on surface : [207,301]
+
 Position in the liquid after the light is refracted: [407, 305]
+
 Refraction: 1.284646
 
-
+In this experiment, the refractive index was taken as the measured liquid water.
+The refractive index of water is 1.33. As a result, the value we obtained was obtained as 1.28 with a margin of error of 3.75%.
 
 
