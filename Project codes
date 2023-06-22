@@ -1,0 +1,91 @@
+
+
+## Project Codes ##
+
+import cv2
+import numpy as np
+from matplotlib import pyplot as plt
+import math
+
+## To take the picture
+cam = cv2.VideoCapture(0)
+cv2.namedWindow("Kamera")
+img_counter = 0 # the number of the pictures taken
+
+while True:
+    ret, frame = cam.read()
+    # We aim the laser light at the surface of the water designated as a reference on the camera
+    
+    
+    cv2.line(frame,(0,270),(315,270),(255,255,255),1) # Befor taking the picture, we need to aim the laser light on these lines that designated as reference
+    cv2.line(frame,(320 ,270),(640,270),(255,255,255),1)
+    cv2.rectangle(frame,(530,50),(570,90),(255,255,255),1)
+    
+   
+    cv2.imshow("Kamera", frame)
+    if not ret:
+        break
+    k = cv2.waitKey(1)
+    if k%256 == 27:
+        # ESC pressed
+        print("Escape hit, closing...")
+        break
+    elif k%256 == 32:
+        # SPACE pressed to take the picture
+        img_name = "rs{}.png".format(img_counter)
+        cv2.imwrite(img_name, frame)
+        print("{} written!".format(img_name))
+        print('Width',cam.get(cv2.CAP_PROP_FRAME_WIDTH))
+        print('Height',cam.get(cv2.CAP_PROP_FRAME_HEIGHT))
+        img_counter += 1
+cam.release()
+cv2.destroyAllWindows()
+
+# After taking the picture
+
+img = cv2.imread('rs1.png') # Image variable 
+src = cv2.imread("rs1.png", cv2.IMREAD_GRAYSCALE) # The picture turned into grey
+siyah1 = src[96:265,0:640] = 0
+siyah2 = src[275:400,0:640] = 0  # In order not to cause confusion in the processes if there are brightnesses and reflections that may occur in the photo, the places outside the reference areas in the picture have been converted to black pixels.
+thresh = 243 # minimum treshold
+maxValue = 245 # Maximum treshold
+th, dst = cv2.threshold(src, thresh, maxValue, cv2.THRESH_BINARY); # Applied this treshold to the picture
+# outside of the treshold made black
+coord = np.argwhere(dst>=245) #  coordinates are in this variable
+
+for i in range(len(coord)):
+    A =coord[i]
+    if A[0]<=[100] :
+        print("Position of the lazer light  =",A)
+        nokta_1 = A
+        break
+#
+for j in range(x) :
+    B = coord[j]
+    if B[0]>=[200] and B[0]<[400] :
+        if B[0]<=[270]:
+            print("surface that we point the lazer light",B)
+            nokta_2 = B
+        break
+for k in  range(x) :
+    C = coord[k]
+    if C[0]>=[400] :
+        print("Kırılma sonrası sıvı içi konumu = ",C)
+        nokta_3 = C
+        break
+# refraction index calculation #
+a = abs(C-A) #because we calculate with distance 
+hipo1 = math.sqrt(a[0]*a[0] + (a[1]*a[1]))
+sin1 = a[1]/hipo1
+print("sin1 = ",sin1)
+hipo2 =math.sqrt(C[1]*C[1]+(C[0]*C[0]))
+sin2 = C[1]/hipo2
+print("sin2 = ",sin2)
+kirilma = sin2/sin1
+print("kirilma = ",kirilma)
+plt.imshow(img, cmap="gray")
+plt.show()
+plt.imshow(dst ,cmap="gray")
+plt.show()
+cv2.waitKey(0)
+cv2.destroyAllWindows()
