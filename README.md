@@ -22,14 +22,14 @@ Black and white, that way we can only work on these points for our calculations
 
 <img width="433" alt="Screenshot 2023-06-22 at 3 20 32 PM" src="https://github.com/developerRD/ImageProcessing/assets/34951241/f648ea24-05ec-4dd2-b953-9fb316e22e42">
 
-And this is the final picture that shows the reuslts. 
-Since my first language is Turkish, I completed this project using Turkish language but here I Provided a translation for you.
+And this is the final picture that shows the results. 
+Since my first language is Turkish, I completed this project in some parts of the Turkish language but here I Provided a translation for you.
 
-Location of laser light : [30 ,504 ] 
+Location of laser light : [30 504 ] 
 
-Location of the laser pointed on surface : [207,301]
+Location of the laser pointed on surface : [207 301]
 
-Position in the liquid after the light is refracted: [407, 305]
+Position in the liquid after the light is refracted: [407 305]
 
 Refraction: 1.284646
 
