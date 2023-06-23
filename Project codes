@@ -46,11 +46,11 @@ cv2.destroyAllWindows()
 img = cv2.imread('rs1.png') # Image variable 
 src = cv2.imread("rs1.png", cv2.IMREAD_GRAYSCALE) # The picture turned into grey
 siyah1 = src[96:265,0:640] = 0
-siyah2 = src[275:400,0:640] = 0  # In order not to cause confusion in the processes if there are brightnesses and reflections that may occur in the photo, the places outside the reference areas in the picture have been converted to black pixels.
+siyah2 = src[275:400,0:640] = 0  # In order not to cause confusion in the processes if there are brightnesses and reflections that may occur in the photo, the places over and below the reference coordinations in the picture have been converted to black pixels.
 thresh = 243 # minimum treshold
 maxValue = 245 # Maximum treshold
 th, dst = cv2.threshold(src, thresh, maxValue, cv2.THRESH_BINARY); # Applied this treshold to the picture
-# outside of the treshold made black
+# over the treshold is black
 coord = np.argwhere(dst>=245) #  coordinates are in this variable
 
 for i in range(len(coord)):
