@@ -56,7 +56,7 @@ coord = np.argwhere(dst>=245) #  coordinates are in this variable
 for i in range(len(coord)):
     A =coord[i]
     if A[0]<=[100] :
-        print("Position of the lazer light  =",A)
+        print("Position of the laser light  =",A)
         nokta_1 = A
         break
 #
@@ -64,13 +64,13 @@ for j in range(x) :
     B = coord[j]
     if B[0]>=[200] and B[0]<[400] :
         if B[0]<=[270]:
-            print("surface that we point the lazer light",B)
+            print("surface that we point the laser light",B)
             nokta_2 = B
         break
 for k in  range(x) :
     C = coord[k]
     if C[0]>=[400] :
-        print("Kırılma sonrası sıvı içi konumu = ",C)
+        print("Location of the laser point in the bottom of the cup after refraction = ",C)
         nokta_3 = C
         break
 # refraction index calculation #
@@ -82,7 +82,7 @@ hipo2 =math.sqrt(C[1]*C[1]+(C[0]*C[0]))
 sin2 = C[1]/hipo2
 print("sin2 = ",sin2)
 kirilma = sin2/sin1
-print("kirilma = ",kirilma)
+print("kirilma = ",kirilma) # refraction 
 plt.imshow(img, cmap="gray")
 plt.show()
 plt.imshow(dst ,cmap="gray")
