@@ -1,6 +1,6 @@
 # Using Raspberry Pi to calculate the refraction index for liquids by image processing techniques.
 
-In this project, I captured an image using the Raspberry Pi camera with Python, applied various image processing techniques, and calculated the refraction index based on the detected coordinates.
+In this project, I captured an image using the Raspberry Pi camera, applied various image processing techniques with Python, and calculated the refraction index based on the detected coordinates.
 
 I provided codes here in this repository.
 
