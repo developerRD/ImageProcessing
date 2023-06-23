@@ -1,6 +1,6 @@
 # ImageProcessing
 
-In this project, I captured an image using the raspberry pi camera with python, applied some image processing techniques, and calculated the refraction index based on the detected coordinates.
+In this project, I captured an image using the Raspberry Pi camera with Python, applied various image processing techniques, and calculated the refraction index based on the detected coordinates.
 
 I provided codes here in this repository.
 
