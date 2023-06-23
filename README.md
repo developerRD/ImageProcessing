@@ -9,7 +9,7 @@ It's still a good practice to perform additional testing and validation to ensur
 
 <img width="430" alt="Screenshot 2023-06-22 at 3 17 35 PM" src="https://github.com/developerRD/ImageProcessing/assets/34951241/dd2a00a4-fa09-4c50-909b-f5df5168363e">
 
-When the codes run, first a camera starts running and you can see some spots on the camera that shows you how to take the picture in order to get the correct results.
+When the codes run, first a camera starts running and you can see the lines on the camera that shows you how to take the picture in order to get the correct results.
 In order to work with this code and measure the refractive index for liquids, you need a laser pointer and liquid in a glass cup that can be shown in the pictures.
 
 <img width="481" alt="Screenshot 2023-06-22 at 3 18 41 PM" src="https://github.com/developerRD/ImageProcessing/assets/34951241/e72de86a-a7cc-4c53-95d8-10934be75bb0">
