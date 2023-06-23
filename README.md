@@ -18,7 +18,7 @@ Gray scale of the picture for calculations
 
 <img width="541" alt="Screenshot 2023-06-22 at 3 19 18 PM" src="https://github.com/developerRD/ImageProcessing/assets/34951241/6254a3f7-85d9-4169-a90a-c63fa14cb364"> 
 
-Black and white, that way we can only work on these points for our calculations
+Turned the picture into black and white, that way we can only work on 0 and 1 values for our calculations. 
 
 <img width="433" alt="Screenshot 2023-06-22 at 3 20 32 PM" src="https://github.com/developerRD/ImageProcessing/assets/34951241/f648ea24-05ec-4dd2-b953-9fb316e22e42">
 
