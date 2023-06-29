@@ -8,7 +8,7 @@ The image processing pipeline has several essential steps, including the convers
 Afterwards, certain areas that we wanted to focus on were intentionally made black in order to reduce any factors that could cause problems, like being too bright or having reflections.
 An then a thresholding technique was applied to segment the image based on intensity levels, resulting in a binary representation.
 
-Utilizing the binary image, the coordinates of relevant features were extracted using numpy-based operations. These coordinates were subsequently utilized to calculate the refraction index based on established mathematical formulations. Notably, the calculations took into account the distances between the detected coordinates, enabling the estimation of the refraction index for the analyzed liquid samples.
+Utilizing the binary image, the coordinates of relevant features were extracted using numpy. These coordinates were subsequently utilized to calculate the refraction index based on established mathematical formulations. Notably, the calculations took into account the distances between the detected coordinates, enabling the estimation of the refraction index for the analyzed liquid samples.
 
 I provided codes as well in this repository.
 
