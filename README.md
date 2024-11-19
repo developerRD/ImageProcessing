@@ -1,18 +1,16 @@
 # Using Raspberry Pi to calculate the refraction index for liquids by image processing techniques.
 
-In this project, I employed the Raspberry Pi camera module to capture images, enabling the application of advanced image processing techniques using Python. 
+In this project, I used the Raspberry Pi camera module to capture images, allowing for advanced image processing techniques in Python.
 
-The objective of the project was to determine the refraction index of liquids by leveraging image analysis methodologies.
+The goal of the project was to determine the refraction index of liquids by applying image analysis methods.
 
-The image processing pipeline has several essential steps, including the conversion of captured images to grayscale to facilitate subsequent analysis. 
-Afterwards, certain areas that we wanted to focus on were intentionally made black in order to reduce any factors that could cause problems, like being too bright or having reflections.
-An then a thresholding technique was applied to segment the image based on intensity levels, resulting in a binary representation.
+The image processing pipeline has several key steps, including converting the captured images to grayscale to make analysis easier. Afterwards, specific areas we wanted to focus on were intentionally blacked out to reduce issues like excessive brightness or reflections. Then, a thresholding technique was applied to separate parts of the image based on intensity levels, creating a binary version of the image.
 
-Utilizing the binary image, the coordinates of relevant features were extracted using numpy. These coordinates were subsequently utilized to calculate the refraction index based on established mathematical formulations. Notably, the calculations took into account the distances between the detected coordinates, enabling the estimation of the refraction index for the analyzed liquid samples.
+Using the binary image, the coordinates of relevant features were extracted with numpy. These coordinates were then used to calculate the refraction index based on established mathematical formulas. Importantly, the calculations considered the distances between the detected coordinates, allowing an estimate of the refraction index for the liquid samples analyzed.
 
-I provided codes as well in this repository.
+I’ve also provided the code for this project in the repository.
 
-It's still a good practice to perform additional testing and validation to ensure the code's reliability across a wider range of scenarios or input variations.
+It’s a good practice to perform additional testing and validation to ensure the code works reliably across different scenarios and inputs.
 
 
 <img width="430" alt="Screenshot 2023-06-22 at 3 17 35 PM" src="https://github.com/developerRD/ImageProcessing/assets/34951241/dd2a00a4-fa09-4c50-909b-f5df5168363e">
