@@ -31,8 +31,6 @@ binary representation, black and white picture
 
 And this is the final picture that shows the results. 
 
-As a native Turkish speaker, I originally completed this project in Turkish. 
-
 English translated results are belove: 
 
 Location of laser light : [30 504 ] 
